@@ -87,24 +87,51 @@ img.main-image {
     display: block;
 }
 
-/* Dark mode styles */
+/* Default Light Mode Styles */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode Styles */
 body.dark-mode {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: black;
+    color: white;
 }
 
-body.dark-mode p::after {
-    border-top-color: #f0f0f0;
+/* Dropdown Button Styles */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Smooth corners */
 }
 
-body.dark-mode .dropdown-content {
-    background-color: #444;
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px; /* Smooth corners */
 }
 
-body.dark-mode .dropdown-content a {
-    color: #f0f0f0;
+/* Dropdown Links */
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    border-radius: 5px; /* Smooth corners */
 }
 
-body.dark-mode .dropdown-content a:hover {
-    background-color: #555;
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
